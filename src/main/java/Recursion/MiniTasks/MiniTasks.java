@@ -15,6 +15,9 @@ public class MiniTasks {
         System.out.print(n + " "); // печатаем на обратном пути
     }
 
+    ////////
+
+    //
 
 
 }
