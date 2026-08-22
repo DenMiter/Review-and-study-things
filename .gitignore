@@ -13,6 +13,9 @@ target/
 *.iml
 *.ipr
 *.class
+.idea/
+src/main/resources/
+
 
 ### Eclipse ###
 .apt_generated
