@@ -2,7 +2,7 @@ package FirstTasks;
 
 public class BubbleSort {
 
-    public static int[] array = {2,32,325,45,6,7,8,2,4,5,6,78,43,5,35,6,7,88,8};
+    public static int[] array = {2, 32, 325, 45, 6, 7, 8, 2, 4, 5, 6, 78, 43, 5, 35, 6, 7, 88, 8};
 
     public static void main(String[] args) {
 
@@ -11,7 +11,7 @@ public class BubbleSort {
                 if (array[j] > array[j + 1]) {
                     int temp = array[j];
                     array[j] = array[j + 1];
-                    array[j+1] = temp;
+                    array[j + 1] = temp;
                 }
             }
         }

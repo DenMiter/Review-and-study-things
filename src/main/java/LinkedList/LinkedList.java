@@ -4,16 +4,6 @@ import java.util.NoSuchElementException;
 
 public class LinkedList<E> {
 
-    static class Node<E> {
-        E item;
-        Node<E> next;
-        Node<E> prev;
-
-        Node(E item) {
-            this.item = item;
-        }
-    }
-
     private Node<E> first;
     private Node<E> last;
     private int size;
@@ -51,11 +41,11 @@ public class LinkedList<E> {
         }
     }
 
-    public int size(){
+    public int size() {
         return size;
     }
 
-    public boolean isEmpty(){
+    public boolean isEmpty() {
         return size == 0;
     }
 
@@ -113,7 +103,7 @@ public class LinkedList<E> {
         }
         return value;
     }
-    
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
@@ -130,6 +120,16 @@ public class LinkedList<E> {
         }
         sb.append(" )");
         return sb.toString();
+    }
+
+    static class Node<E> {
+        E item;
+        Node<E> next;
+        Node<E> prev;
+
+        Node(E item) {
+            this.item = item;
+        }
     }
 
 

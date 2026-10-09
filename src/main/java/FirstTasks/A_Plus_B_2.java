@@ -15,11 +15,11 @@ public class A_Plus_B_2 {
         writeOutput();
     }
 
-    public static void readInput(){
+    public static void readInput() {
         String fileName = "C:\\Users\\user\\Desktop\\input.txt";
-        try (FileReader fr = new FileReader(fileName)){
+        try (FileReader fr = new FileReader(fileName)) {
             int charsRead = fr.read(buf);
-            if (charsRead != -1){
+            if (charsRead != -1) {
                 res = new String(buf, 0, charsRead);
             }
             String[] nums = res.split(" ");
@@ -31,9 +31,9 @@ public class A_Plus_B_2 {
         }
     }
 
-    public static void writeOutput(){
+    public static void writeOutput() {
         String fileName = "C:\\Users\\user\\Desktop\\output.txt";
-        try (FileWriter fw = new FileWriter(fileName)){
+        try (FileWriter fw = new FileWriter(fileName)) {
             fw.write(Integer.toString(sum));
         } catch (IOException ioException) {
             System.out.println(ioException.getMessage());

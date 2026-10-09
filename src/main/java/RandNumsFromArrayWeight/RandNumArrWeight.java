@@ -32,7 +32,7 @@ public class RandNumArrWeight {
         for (int i = 0; i < weights.length; i++) {
             n -= weights[i];
             if (n < 0) {
-               return nums[i];
+                return nums[i];
             }
         }
         return nums[nums.length - 1];

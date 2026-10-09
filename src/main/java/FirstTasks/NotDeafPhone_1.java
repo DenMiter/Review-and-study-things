@@ -9,7 +9,7 @@ public class NotDeafPhone_1 {
     String res;
     char[] buf = new char[3];
 
-    public static void main (String[] args) {
+    public static void main(String[] args) {
         NotDeafPhone_1 notDeafPhone = new NotDeafPhone_1();
         notDeafPhone.readNum();
         notDeafPhone.writeNum();
@@ -17,7 +17,7 @@ public class NotDeafPhone_1 {
 
     public void readNum() {
         String fileName2 = "C:\\Users\\user\\Desktop\\input.txt";
-        try (FileReader fileReader = new FileReader(fileName2)){
+        try (FileReader fileReader = new FileReader(fileName2)) {
             int charsRead = fileReader.read(buf);
             if (charsRead != -1) {
                 res = new String(buf, 0, charsRead);

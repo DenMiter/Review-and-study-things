@@ -11,12 +11,12 @@ public class MaxMinAverage {
         double[] arr = new double[10];
 
         for (int i = 0; i < 10; i++) {
-            arr[i] = Math.random()*10;
+            arr[i] = Math.random() * 10;
         }
 
         for (int i = 0; i < 9; i++) {
             if (max < arr[i]) {
-                max =  arr[i];
+                max = arr[i];
             }
         }
 
@@ -34,7 +34,7 @@ public class MaxMinAverage {
         System.out.println();
 
         for (int i = 0; i < 10; i++) {
-            System.out.print(  arr[i] + ", ");
+            System.out.print(arr[i] + ", ");
         }
 
         System.out.println("\n" + "\n" + max + " " + min + " " + average);

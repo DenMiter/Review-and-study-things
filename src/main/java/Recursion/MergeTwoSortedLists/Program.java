@@ -13,12 +13,9 @@ public class Program {
         list2.getNext().setNext(new ListNode(16));
 
 
-
-
         ListNode merger = new ListNode();
 
         ListNode result = merger.mergeTwoLists(list1, list2);
-
 
 
         ListNode current = result;
@@ -29,12 +26,7 @@ public class Program {
         }
 
 
-
-
-
     }
-
-
 
 
 }

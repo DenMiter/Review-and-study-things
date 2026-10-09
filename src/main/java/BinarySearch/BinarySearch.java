@@ -63,7 +63,7 @@ public class BinarySearch {
         } else if (n < arr[middle]) {
             return binarySearchInArray(arr, n, left, middle - 1);
         } else {
-            return binarySearchInArray(arr, n, middle + 1 , right);
+            return binarySearchInArray(arr, n, middle + 1, right);
         }
 
     }

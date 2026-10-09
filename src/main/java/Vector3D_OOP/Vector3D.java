@@ -14,8 +14,22 @@ public class Vector3D {
         this.z = z;
     }
 
+    public static Vector3D[] GenerateRandVectors(int N) {
+        Vector3D[] vector3Darr = new Vector3D[N];
+        for (int i = 0; i < N; i++) {
+
+            Random random = new Random();
+            int x = random.nextInt(10);
+            int y = random.nextInt(10);
+            int z = random.nextInt(10);
+
+            vector3Darr[i] = new Vector3D(x, y, z);
+        }
+        return vector3Darr;
+    }
+
     public double CalcLength() {
-        return Math.sqrt(Math.pow(x,2) + Math.pow(y,2) + Math.pow(z,2));
+        return Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2));
 
     }
 
@@ -38,20 +52,6 @@ public class Vector3D {
 
     public Vector3D Subtract(Vector3D other) {
         return new Vector3D(this.x - other.x, this.y - other.y, this.z - other.z);
-    }
-
-    public static Vector3D[] GenerateRandVectors(int N) {
-        Vector3D[] vector3Darr = new Vector3D[N];
-        for (int i = 0; i < N; i++) {
-
-            Random random = new Random();
-            int x = random.nextInt(10);
-            int y = random.nextInt(10);
-            int z = random.nextInt(10);
-
-            vector3Darr[i] = new Vector3D(x, y, z);
-        }
-        return vector3Darr;
     }
 
     @Override

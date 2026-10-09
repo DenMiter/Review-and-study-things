@@ -34,7 +34,6 @@ public class Programm {
         System.out.println(linkedList);
 
 
-
         LinkedList<Integer> linkedList2 = new LinkedList<Integer>();
 
         linkedList2.add(6);

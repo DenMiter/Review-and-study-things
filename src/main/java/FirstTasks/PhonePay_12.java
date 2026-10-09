@@ -20,7 +20,7 @@ public class PhonePay_12 {
         String path = "C:\\Users\\user\\Desktop\\input.txt";
         try (FileReader fr = new FileReader(path)) {
             int charsRead = fr.read(buf);
-            if ((charsRead) != -1){
+            if ((charsRead) != -1) {
                 values = new String(buf, 0, charsRead);
                 String[] separatedValues = values.split(" ");
 
