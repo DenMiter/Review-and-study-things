@@ -2,8 +2,8 @@ package Exercism.NFS;
 
 public class NeedForSpeed {
 
-    private int speed;
-    private int batteryDrain;
+    private final int speed;
+    private final int batteryDrain;
 
     private int drivenDistance;
     private int battery;
@@ -17,10 +17,6 @@ public class NeedForSpeed {
 
     public static NeedForSpeed nitro() {
         return new NeedForSpeed(50, 4);
-    }
-
-    public int getDrivenDistance() {
-        return drivenDistance;
     }
 
     public void drive() {
