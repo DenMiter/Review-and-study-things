@@ -1,4 +1,4 @@
-package Exercism.ToyCarClasses;
+package Exercism.ToyCarTask;
 
 public class ToyCar {
 
